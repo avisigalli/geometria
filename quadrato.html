@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Geometria</title>
+  <meta name="description" content="Geometria">
+  <meta name="author" content="Alessandro">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<div class=container>
+	<div class=row>
+		<div class="twelve columns">
+		<img src=images/cover.jpg class=u-full-width>
+		</div>
+	</div>
+	<div class=row>
+		<div class="six columns">
+		<h3>Quadrato (Square)</h3>
+		<img src=images/Quadrato.png class=u-full-width>
+		</div>
+		<div class="six columns">
+		<!-- form quadrato -->
+		<form name=quadrato>
+		<label for=lato>Lato</label>
+		<input type=number name=lato min=0.001 step=0.001 required><br>
+		<input type=reset value=Cancella class=button>
+		<button type=button onclick=perimetroquadrato() class=button>Perimetro</button>
+		<button type=button onclick=areaquadrato() class=button>Area</button>
+		</form>
+		<p id=perimetro> </p>
+		<p id=area > </p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
