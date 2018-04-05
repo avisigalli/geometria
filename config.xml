@@ -16,5 +16,5 @@
   <author href="https://build.phonegap.com">
       Alessandro Visigalli
   </author>
-
+  <icon src="images/icon.png" /></icon>
 </widget>
