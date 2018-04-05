@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Geometria</title>
+  <meta name="description" content="Geometria">
+  <meta name="author" content="Alessandro">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+   <!-- Javascript
+  -------------------------------------------------  -->
+   <script src=js/funzioni.js> </script> 
+  <script>
+ 23
+  /* cancellare */
+		function cancella(){
+		document.getElementById("peri").innerHTML=" ";
+		document.getElementById("area").innerHTML=" ";
+		}
+  </script>
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<div class=container>
+	<div class=row>
+		<div class="twelve columns" align=center>
+		<img src=images/cover.jpg class=u-full-width>
+		<a href=index.html><button type=button>Indietro</button></a>
+		</div>
+	</div>
+	<div class=row>
+		<div class="six columns">
+		<h3>Triangolo rettangolo (Right triangle)</h3>
+		<img src=images/Triangolo-rettangolo.png class=u-full-width>
+		</div>
+		<div class="six columns">
+		<form name=triangolo>
+		<label for=base>Base (Cateto 1)</label>
+		<input type=number name=base min=0.001 step=0.001 required class=u-full-width><br>
+		<label for=altezza>Altezza (Cateto 2)</label>
+		<input type=number name=altezza min=0.001 step=0.001 required class=u-full-width><br>
+		<input type=reset value=Cancella class="button u-full-width" onclick=cancella()><br>
+		<button type=button onclick=perimetrot() class="button u-full-width">Perimetro</button><br>
+		<button type=button onclick=areat() class="button u-full-width">Area</button>
+		</form>
+		<p id=peri> </p>
+		<p id=area> </p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
